@@ -352,7 +352,7 @@ video {
   }
 }
 
-@media (max-width: 999px) {
+/* @media (max-width: 999px) {
   .dummy {
     display: none;
   }
@@ -362,4 +362,4 @@ video {
   .slide_content div p {
     font-size: 10px;
   }
-}
+} */
