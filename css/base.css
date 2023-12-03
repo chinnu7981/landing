@@ -28,7 +28,7 @@ body {
 .company-logo {
   position: absolute;
   top: 20px;
-  left: 20px;
+  right: 20px;
   width: 160px;
   display: block;
   /* Adjust the width as needed */
@@ -307,6 +307,10 @@ body #cdawrap {
   justify-self: start;
 }
 
+.slide_content div{
+	padding-left: 50px;
+}
+
 .frame a,
 .frame button {
   pointer-events: auto;
@@ -488,6 +492,12 @@ video {
   background-color: #ccc;
 }
 
+.menu--open svg:not(:root){
+	background: black;
+	opacity: 85%;
+}
+	
+
 @media screen and (min-width: 53em) {
   .frame {
     height: 100vh;
@@ -529,3 +539,20 @@ video {
     font-size: 10px;
   }
 } */
+
+@media (max-width: 999px) {
+	.slides-nav__item--prev{
+		bottom: 40px;
+		right: 20px;
+	}
+	.slides-nav__item--next{
+    		bottom: 40px;
+    		right: 20px;
+	}
+	.slides-nav::before {
+		margin-bottom: 3rem;
+	}
+	.slide_content div{
+	padding-left: 30px;
+}
+}
