@@ -2,6 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  cursor: none !important;
 }
 
 :root {
@@ -90,7 +91,16 @@ button {
   height: 100%;
   border: 5px double var(--color);
   box-shadow: inset 0px 0px 15px #195480;
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
 }
 
 .arrow {
@@ -141,11 +151,11 @@ button:hover #leftArrow {
 
 #leftTop {
   top: -1.96em;
-  left: -3.0em;
+  left: -3em;
 }
 
 #leftBottom {
-  top: 2.10em;
+  top: 2.1em;
   left: -2.15em;
 }
 
@@ -156,22 +166,22 @@ button:hover #leftArrow {
 
 button:hover #leftTop {
   animation: 0.1s ease-in-out 0.05s both changeColor8,
-  0.2s linear 0.4s both lightEffect8;
+    0.2s linear 0.4s both lightEffect8;
 }
 
 button:hover #rightTop {
   animation: 0.1s ease-in-out 0.15s both changeColor8,
-  0.2s linear 0.4s both lightEffect8;
+    0.2s linear 0.4s both lightEffect8;
 }
 
 button:hover #rightBottom {
   animation: 0.1s ease-in-out 0.25s both changeColor8,
-  0.2s linear 0.4s both lightEffect8;
+    0.2s linear 0.4s both lightEffect8;
 }
 
 button:hover #leftBottom {
   animation: 0.1s ease-in-out 0.35s both changeColor8,
-  0.2s linear 0.4s both lightEffect8;
+    0.2s linear 0.4s both lightEffect8;
 }
 
 button:hover .corner {
@@ -232,9 +242,6 @@ button:hover #clip {
   }
 }
 
-
-
-
 a {
   text-decoration: none;
   color: var(--color-link);
@@ -287,7 +294,7 @@ a:focus-visible {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   color: var(--color-title);
   padding: 2rem;
   display: grid;
@@ -307,8 +314,8 @@ body #cdawrap {
   justify-self: start;
 }
 
-.slide_content div{
-	padding-left: 50px;
+.slide_content div {
+  padding-left: 50px;
 }
 
 .frame a,
@@ -369,7 +376,7 @@ a.frame__demo--current {
 
 .slides {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   display: grid;
   grid-template-rows: 100%;
@@ -435,7 +442,7 @@ a.frame__demo--current {
 }
 video {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   object-fit: cover;
   z-index: -10;
   display: absolute;
@@ -492,15 +499,14 @@ video {
   background-color: #ccc;
 }
 
-.menu--open svg:not(:root){
-	background: black;
-	opacity: 85%;
+.menu--open svg:not(:root) {
+  background: black;
+  opacity: 85%;
 }
-	
 
 @media screen and (min-width: 53em) {
   .frame {
-    height: 100vh;
+    height: 100dvh;
     grid-gap: 2rem;
     align-content: space-between;
     grid-template-columns: auto auto auto 1fr;
@@ -541,18 +547,18 @@ video {
 } */
 
 @media (max-width: 999px) {
-	.slides-nav__item--prev{
-		bottom: 40px;
-		right: 20px;
-	}
-	.slides-nav__item--next{
-    		bottom: 40px;
-    		right: 20px;
-	}
-	.slides-nav::before {
-		margin-bottom: 3rem;
-	}
-	.slide_content div{
-	padding-left: 30px;
-}
+  .slides-nav__item--prev {
+    bottom: 40px;
+    right: 20px;
+  }
+  .slides-nav__item--next {
+    bottom: 40px;
+    right: 20px;
+  }
+  .slides-nav::before {
+    margin-bottom: 3rem;
+  }
+  .slide_content div {
+    padding-left: 30px;
+  }
 }
